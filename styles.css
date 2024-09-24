@@ -80,7 +80,7 @@ nav ul li a:hover {
     font-size: 2rem;
     font-weight: bold;
     -webkit-text-stroke: #111;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 0.1rem;
 }
 
 .pannelBig {
