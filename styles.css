@@ -95,3 +95,8 @@ a {
 a:hover {
     color: goldenrod;
 }
+
+.socials img {
+    height: 2rem;
+    background-color: coral;
+}
