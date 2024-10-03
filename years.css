@@ -1,0 +1,5 @@
+.team {
+    table-layout: auto;
+    columns: 3;
+    list-style-type: none;
+}
