@@ -59,3 +59,60 @@ p {
 #money {
     color: green;
 }
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.awards-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.awards-section h1 {
+    color: #333;
+    text-align: center;
+}
+
+.awards-section p {
+    color: #666;
+    text-align: center;
+}
+
+.awards-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.awards-section ul li {
+    background-color: #e7f3fe;
+    border: 1px solid #b3d4fc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.awards-section img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
