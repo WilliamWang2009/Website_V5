@@ -33,10 +33,19 @@
     box-sizing: border-box; */
 }
 
+.team-member a {
+    text-decoration: none;
+}
+
 .team-img {
     width: 100px;
     height: auto;
     border-radius: 50%;
+}
+
+.sponsor-img {
+    width: 100px;
+    height: auto;
 }
 
 h3 {
@@ -45,4 +54,8 @@ h3 {
 
 p {
     margin: 0;
+}
+
+#money {
+    color: green;
 }
