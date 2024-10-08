@@ -50,6 +50,7 @@ nav ul li a:hover {
     color: black !important;
     align-content: start;
 }
+
 .heading {
     display: flex;
     height: 50vh;
@@ -99,4 +100,15 @@ a:hover {
 .socials img {
     height: 2rem !important;
     background-color: coral;
+}
+
+.footer hr {
+    width: 80%;
+    align-self: center;
+    margin-top: 14rem;
+}
+
+.footer p {
+    text-align: left;
+    text-indent: 11%;
 }

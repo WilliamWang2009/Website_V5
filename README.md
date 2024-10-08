@@ -2,6 +2,6 @@
 (Final Version??!?!?)
 
 
-# Creits
+# Credits
 - Adam Jacuch
 - Logan Rembisz
