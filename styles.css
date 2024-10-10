@@ -117,3 +117,14 @@ a:hover {
     text-align: left;
     text-indent: 11%;
 }
+
+.socials h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.socials hr {
+    width: 40%;
+    align-self: center;
+    margin-top: 5rem;
+}

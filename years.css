@@ -101,3 +101,9 @@ p {
 .socials {
     margin-top: 10vh;
 }
+
+.socials iframe {
+    width: 35%;
+    aspect-ratio: 16/9;
+    height: auto;
+}
