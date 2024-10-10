@@ -97,3 +97,7 @@ p {
         grid-template-columns: 1fr;
     }
 }
+
+.socials {
+    margin-top: 10vh;
+}
