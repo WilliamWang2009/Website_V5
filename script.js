@@ -1,12 +1,10 @@
-/*
-
 import dotenv from 'dotenv';
 dotenv.config();
 
 async function fetchLatestCommitDate() {
     const token = process.env.GITHUB_TOKEN;
-    const owner = 'OWNER';
-    const repo = 'REPO';
+    const owner = 'Friars23707';
+    const repo = 'Website_V5';
     const url = `https://api.github.com/repos/${owner}/${repo}/commits`;
 
     const response = await fetch(url, {
@@ -19,10 +17,10 @@ async function fetchLatestCommitDate() {
     if (response.ok) {
         const commits = await response.json();
         const latestCommitDate = commits[0].commit.committer.date;
-        document.getElementById('commit-date').innerText = `Latest Commit Date: ${new Date(latestCommitDate).toLocaleString()}`;
+        window.print(`Latest Commit Date: ${new Date(latestCommitDate).toLocaleString()}`);
     } else {
-        document.getElementById('commit-date').innerText = 'Failed to load commit date';
+        window.print('Failed to load commit date');
     }
 }
 
-fetchLatestCommitDate(); */
+fetchLatestCommitDate(); 
