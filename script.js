@@ -1,5 +1,5 @@
-/*import dotenv from 'dotenv';
-dotenv.config();*/
+import dotenv from 'dotenv';
+dotenv.config();
 
 async function fetchLatestCommitDate() {
     const token = process.env.TOKEN;
@@ -18,8 +18,10 @@ async function fetchLatestCommitDate() {
         const commits = await response.json();
         const latestCommitDate = commits[0].commit.committer.date;
         window.print(`Latest Commit Date: ${new Date(latestCommitDate).toLocaleString()}`);
+        document.getElementById("lastDate").textContent = `Latest Commit Date: ${new Date(latestCommitDate).toLocaleString()}`;
     } else {
         window.print('Failed to load commit date');
+        document.getElementById("lastDate").textContent = `Failed to load commit`;
     }
 }
 
