@@ -1,5 +1,5 @@
 async function fetchLatestCommitDate() {
-    const token = secrets.TOKEN;
+    const token =  process.env.TOKEN;
     const owner = 'Friars23707';
     const repo = 'Website_V5';
     const url = `https://api.github.com/repos/${owner}/${repo}/commits`;
