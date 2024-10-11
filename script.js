@@ -1,8 +1,5 @@
-import dotenv from 'dotenv';
-dotenv.config();
-
 async function fetchLatestCommitDate() {
-    const token = process.env.TOKEN;
+    const token = secrets.TOKEN;
     const owner = 'Friars23707';
     const repo = 'Website_V5';
     const url = `https://api.github.com/repos/${owner}/${repo}/commits`;
