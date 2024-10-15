@@ -107,3 +107,41 @@ p {
     aspect-ratio: 16/9;
     height: auto;
 }
+
+
+/*
+OUTREACH BOXES
+*/
+
+.outreach-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.events-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.events-section h1 {
+    color: #333;
+    text-align: center;
+}
+
+.events-section p {
+    color: #666;
+    text-align: center;
+}
+
+.events-section img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
