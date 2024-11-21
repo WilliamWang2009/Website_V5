@@ -26,6 +26,44 @@
         </div>
         <center><p class="pannelBig">We are a group of passionate robotics enthusiasts who love to build and program robots. Our program is open to all students who are interested in robotics and want to learn more about it. We meet every week to discuss new ideas, work on projects, and participate in competitions. Join us today and be a part of the exciting world of robotics!</p></center>
 
+        <div class="totalSlides">
+            <div class="slideshow-container">
+                <!-- Slides -->
+                <div class="slides-container fade">
+                    <img src="./images/2023_Qual3.jpeg" alt="2023 Qualification 3">
+                    <div class="caption-container">
+                        <h3>CENTERSTAGE Qualifier #3</h3>
+                        <p>At this event we were finalist captains with our partner, the Mages</p>
+                    </div>
+                </div>
+                <div class="slides-container fade">
+                    <img src="./images/outreach/Stefano_Matussi.webp" alt="Stefano Matussi">
+                    <div class="caption-container">
+                        <h3>Stefano Matussi's Presentation</h3>
+                        <p>Stefano Matussi gave our team a presentation about his career in aerospace</p>
+                    </div>
+                </div>
+                <div class="slides-container fade">
+                    <img src="./images/outreach/JamesObrien24.png" alt="James O'Brien">
+                    <div class="caption-container">
+                        <h3>James O'Brien's Presentation</h3>
+                        <p>James O'Brien gave our team a presentation about his careeer in computer science and a physicist</p>
+                    </div>
+                </div>
+            
+                <!-- Navigation arrows -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
+            <!-- Dots -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+
         <div class="footer">
             <hr>
             <p>Friar Industries · Robotics Community</p>
@@ -34,5 +72,44 @@
         </div>
         
     </div>
+
+    <script>
+        let slideIndex = 1;
+        let timer;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            clearTimeout(timer);
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            clearTimeout(timer);
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides-container");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            
+            timer = setTimeout(() => plusSlides(1), 10000); // Change image every 10 seconds
+        }
+    </script>
+
 </body>
 </html>

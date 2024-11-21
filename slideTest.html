@@ -8,9 +8,9 @@
         * {box-sizing: border-box;}
         body {font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f3f3f3;}
         .slideshow-container {position: relative; max-width: 75%; margin: auto;}
-        .slides-container {display: flex; align-items: center; display: none;}
-        .slides img {width: 400px; height: auto;} /* Set fixed width for images */
-        .caption-container {padding: 20px; flex: 1;} /* Adjust to take remaining space */
+        .slides-container {display: none; position: relative;}
+        .slides-container img {width: 100%; height: auto;} /* Ensure images take up full container width */
+        .caption-container {position: absolute; bottom: 8px; left: 16px; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 8px; border-radius: 8px;}
         .prev, .next {cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; color: white; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none;}
         .next {right: 0; border-radius: 3px 0 0 3px;}
         .prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);}
@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="slides-container fade">
-        <img src="./images/2023_Qual3.jpeg" alt="2023 Qualification 3">
+        <img src="./images/2023_Qual3.jpeg" alt="2024 Qualification 3">
         <div class="caption-container">
             <h3>Title 2</h3>
             <p>Description for Image 2.</p>
@@ -86,14 +86,12 @@
             slides[i].style.display = "none";  
         }
         
-        for (i = 0; dots.length > 0 && i < dots.length; i++) {
+        for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
         
-        slides[slideIndex-1].style.display = "flex";  
-        if (dots.length > 0) {
-            dots[slideIndex-1].className += " active";
-        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
         
         timer = setTimeout(() => plusSlides(1), 10000); // Change image every 10 seconds
     }
