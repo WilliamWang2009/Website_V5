@@ -145,3 +145,29 @@ OUTREACH BOXES
     margin: 20px auto;
     border-radius: 8px;
 }
+
+/* ROBOT SECTIONS */
+.robot-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align the items to the top */
+    list-style-type: none;
+}
+
+.robot-section {
+    flex: 1;
+    list-style-type: none;
+}
+
+.robot-section ul li {
+    list-style-type: none;
+}
+
+.robot-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
