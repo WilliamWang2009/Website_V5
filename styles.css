@@ -131,6 +131,10 @@ a:hover {
     margin-top: 5rem;
 }
 
+.youtube {
+    width: 50vw;
+    aspect-ratio: 16/9;
+}
 
 
 .slideshow-container {position: relative; max-width: 75%; margin: auto; box-sizing: border-box;}
